@@ -2,426 +2,811 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Portfolio of N Sai Advaith - Computer Science Student, Machine Learning Enthusiast, and Web Developer.">
-    <meta name="keywords" content="N Sai Advaith, Portfolio, Machine Learning, Web Developer, Python, Java, GPREC">
-    <meta name="author" content="N Sai Advaith">
-    <title>N Sai Advaith | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nagulapally Sai Advaith | Interactive Developer Portfolio</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Portfolio of Nagulapally Sai Advaith - B.Tech CSE Student, Full Stack Developer, and Competitive Programmer. Explore interactive project simulators.">
+  <meta name="keywords"
+    content="Nagulapally Sai Advaith, Advaith, Portfolio, Java Developer, Full Stack Developer, Spring Boot, Flask, React, Competitive Programming, CSE">
+  <meta name="author" content="Nagulapally Sai Advaith">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- Scroll Progress Indicator -->
-    <div id="scroll-progress" class="scroll-progress"></div>
 
-    <!-- Navigation -->
-    <header id="header" class="header">
-        <nav class="nav container">
-            <a href="#home" class="nav-logo">NSA</a>
-            <ul id="nav-menu" class="nav-menu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+  <!-- Dynamic Background Grid -->
+  <div class="background-grid"></div>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        Advaith<span class="logo-dot"></span>
+      </a>
+
+      <button class="mobile-menu-btn" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="#about" class="active">About</a></li>
+          <li><a href="#showroom">Showroom</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="about" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span> Available for Opportunities
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Advaith</span>
+        </h1>
+        <div class="hero-subtitle">
+          <span id="typewriter-text"></span><span class="typewriter-cursor"></span>
+        </div>
+        <p class="hero-desc">
+          A passionate software engineer specializing in **Java Full Stack development**, **Spring Boot**, and **AI/ML
+          integration**. I build robust backend microservices, create modern React frontends, and write clean, optimized
+          code for complex algorithmic problems.
+        </p>
+        <div class="hero-actions">
+          <a href="#showroom" class="btn btn-primary">
+            Explore Showroom <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            Get In Touch
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-graphic">
+        <div class="code-window">
+          <div class="code-header">
+            <div class="code-dots">
+              <span class="code-dot-item red"></span>
+              <span class="code-dot-item yellow"></span>
+              <span class="code-dot-item green"></span>
+            </div>
+            <div class="code-title">DeveloperProfile.java</div>
+            <div style="width: 42px;"></div>
+          </div>
+          <div class="code-content">
+            <p><span class="code-keyword">public class</span> <span class="code-class">DeveloperProfile</span> {</p>
+            <p>&nbsp;&nbsp;<span class="code-keyword">private String</span> name = <span class="code-string">"Sai
+                Advaith"</span>;</p>
+            <p>&nbsp;&nbsp;<span class="code-keyword">private String</span> role = <span class="code-string">"Full Stack
+                Intern"</span>;</p>
+            <p>&nbsp;&nbsp;<span class="code-keyword">private double</span> currentCgpa = <span
+                class="code-method">8.73</span>;</p>
+            <p>&nbsp;&nbsp;<span class="code-keyword">private String[]</span> stack = {<span
+                class="code-string">"Java"</span>, <span class="code-string">"Spring Boot"</span>, <span
+                class="code-string">"React"</span>};</p>
+            <br>
+            <p>&nbsp;&nbsp;<span class="code-comment">// Evaluates code quality</span></p>
+            <p>&nbsp;&nbsp;<span class="code-keyword">public void</span> <span class="code-method">solve</span>() {</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-class">System</span>.out.println(<span
+                class="code-string">"Optimizing algorithms..."</span>);</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-class">System</span>.out.println(<span
+                class="code-string">"Shaastra CP Finalist!"</span>);</p>
+            <p>&nbsp;&nbsp;}</p>
+            <p>}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Showroom Section -->
+  <section id="showroom" class="section scroll-reveal">
+    <div class="container">
+      <div class="section-header">
+        <h2>Interactive Project Showroom</h2>
+        <p>Recruiters, experience my work firsthand. Interact with these live project simulations that demonstrate my
+          engineering choices.</p>
+      </div>
+
+      <div class="showroom-wrapper">
+        <!-- Tab Selectors -->
+        <div class="showroom-tabs">
+          <button class="showroom-tab-btn active" data-tab="interview">
+            <i class="fa-solid fa-comments"></i> AI Interviewer
+          </button>
+          <button class="showroom-tab-btn" data-tab="predictor">
+            <i class="fa-solid fa-calculator"></i> Car Price ML
+          </button>
+          <button class="showroom-tab-btn" data-tab="conflict">
+            <i class="fa-solid fa-calendar-days"></i> Booking conflict
+          </button>
+        </div>
+
+        <!-- Tab Panes -->
+        <div class="showroom-panes">
+
+          <!-- Pane 1: AI Mock Interviewer -->
+          <div class="showroom-pane active" id="pane-interview">
+            <div class="pane-info">
+              <h3>AI-Interview Platform</h3>
+              <p>A full-stack, state-isolated mock interview simulator. This module generates interview questions,
+                parses response context, and provides scorecards within 2 seconds. Evaluates technical depth using
+                Gemini's parser.</p>
+              <div class="pane-tech">
+                <span class="tech-tag"><i class="fa-brands fa-envira"></i> Gemini Flash</span>
+                <span class="tech-tag"><i class="fa-brands fa-react"></i> React</span>
+                <span class="tech-tag"><i class="fa-brands fa-java"></i> Java Spring</span>
+                <span class="tech-tag"><i class="fa-solid fa-shield-halved"></i> JWT Sessions</span>
+              </div>
+              <ul class="timeline-card ul" style="margin-bottom: 20px;">
+                <li>JWT-isolated user sessions maintain secure state across connections.</li>
+                <li>Database caching layer reduces external AI parser load by ~60%.</li>
+              </ul>
+            </div>
+            <div class="pane-interactive">
+              <div class="pane-interactive-header">
+                <i class="fa-solid fa-terminal"></i> AI Interview Simulator v1.0
+              </div>
+              <div class="pane-interactive-body">
+                <div class="interview-setup" id="setup-view">
+                  <div class="success-icon"
+                    style="background: rgba(0,242,254,0.08); border-color: var(--color-cyan); color: var(--color-cyan); margin-bottom: 5px;">
+                    <i class="fa-solid fa-robot"></i>
+                  </div>
+                  <h4>Choose your interview track to begin:</h4>
+                  <div class="setup-buttons">
+                    <button class="setup-btn" data-topic="java">Java Core</button>
+                    <button class="setup-btn" data-topic="sql">SQL & DBMS</button>
+                    <button class="setup-btn" data-topic="system">System Design</button>
+                  </div>
+                </div>
+
+                <div class="chat-window" id="chat-view" style="display: none;">
+                  <div class="chat-messages" id="chat-box">
+                    <!-- Messages dynamically filled by app.js -->
+                  </div>
+                  <div class="chat-options" id="chat-choices">
+                    <!-- Choices dynamically filled by app.js -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pane 2: Car Price ML Predictor -->
+          <div class="showroom-pane" id="pane-predictor">
+            <div class="pane-info">
+              <h3>ML Car Price Predictor</h3>
+              <p>A regression application built using multiple linear regression and Flask. Fits dynamic multi-country
+                automotive datasets, executing feature transforms (polynomial expansion and one-hot encoding) to make
+                predictions.</p>
+              <div class="pane-tech">
+                <span class="tech-tag"><i class="fa-brands fa-python"></i> Flask</span>
+                <span class="tech-tag"><i class="fa-solid fa-square-root-variable"></i> Scikit-Learn</span>
+                <span class="tech-tag"><i class="fa-solid fa-chart-line"></i> ML Regression</span>
+                <span class="tech-tag"><i class="fa-solid fa-database"></i> Synthetic Pipeline</span>
+              </div>
+              <ul class="timeline-card ul" style="margin-bottom: 20px;">
+                <li>Achieved high regression performance by applying feature engineering transforms.</li>
+                <li>Simulated regression durability across distributions using robust pipeline testing.</li>
+              </ul>
+            </div>
+            <div class="pane-interactive">
+              <div class="pane-interactive-header">
+                <i class="fa-solid fa-sliders"></i> ML Model Parameters
+              </div>
+              <div class="pane-interactive-body">
+                <div class="ml-widget">
+                  <div class="ml-inputs">
+                    <div class="input-group">
+                      <label>Model Year</label>
+                      <div class="range-wrap">
+                        <input type="range" id="ml-year" min="2010" max="2026" value="2021">
+                        <span class="range-val" id="ml-year-val">2021</span>
+                      </div>
+                    </div>
+                    <div class="input-group">
+                      <label>Mileage (in km)</label>
+                      <div class="range-wrap">
+                        <input type="range" id="ml-mileage" min="1000" max="150000" step="5000" value="45000">
+                        <span class="range-val" id="ml-mileage-val">45K km</span>
+                      </div>
+                    </div>
+                    <div class="input-group">
+                      <label>Fuel Type</label>
+                      <select id="ml-fuel" class="ml-select">
+                        <option value="petrol">Petrol (Base)</option>
+                        <option value="diesel">Diesel (+2500)</option>
+                        <option value="ev">Electric (EV) (+8000)</option>
+                      </select>
+                    </div>
+                    <div class="input-group">
+                      <label>Dataset Origin</label>
+                      <select id="ml-country" class="ml-select">
+                        <option value="us">United States (USD)</option>
+                        <option value="eu">Europe (EUR)</option>
+                        <option value="in">India (INR)</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="ml-gauge-section">
+                    <div class="ml-gauge-wrapper">
+                      <div class="ml-gauge-arc" id="gauge-arc"></div>
+                      <div class="ml-gauge-fill" id="gauge-fill"></div>
+                      <div class="ml-gauge-value" id="gauge-price">$18,400</div>
+                    </div>
+
+                    <div class="ml-formula-panel">
+                      <label>Linear Regression Equation</label>
+                      <div class="ml-formula-math" id="ml-formula-output">
+                        Price = Base_Price + (Year - 2010) * 1500 - (Mileage * 0.08) + Fuel_Coeff
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pane 3: Booking Conflict Solver -->
+          <div class="showroom-pane" id="pane-conflict">
+            <div class="pane-info">
+              <h3>Event Management System</h3>
+              <p>A stateless campus resource management API constructed with Spring Boot and Hibernate. Implements
+                high-integrity booking collision detectors using custom JPQL queries across database transactions.</p>
+              <div class="pane-tech">
+                <span class="tech-tag"><i class="fa-brands fa-java"></i> Spring Boot</span>
+                <span class="tech-tag"><i class="fa-solid fa-leaf"></i> Hibernate / JPA</span>
+                <span class="tech-tag"><i class="fa-solid fa-shield-halved"></i> Security & Role Access</span>
+                <span class="tech-tag"><i class="fa-solid fa-arrows-spin"></i> Conflict Resolver</span>
+              </div>
+              <ul class="timeline-card ul" style="margin-bottom: 20px;">
+                <li>Prevents multi-booking conditions across state modifications.</li>
+                <li>Utilizes JWT-based role hierarchies for distinct approval layers (Admin, Club, Student).</li>
+              </ul>
+            </div>
+            <div class="pane-interactive">
+              <div class="pane-interactive-header">
+                <i class="fa-solid fa-code-fork"></i> JPQL Event Conflict Detector
+              </div>
+              <div class="pane-interactive-body">
+                <div class="conflict-widget">
+                  <div class="conflict-timeline">
+                    <div class="timeline-row">
+                      <span class="row-label">Campus Hall</span>
+                      <div class="timeline-bar-container">
+                        <div class="timeline-grid-lines">
+                          <span class="grid-line"></span><span class="grid-line"></span>
+                          <span class="grid-line"></span><span class="grid-line"></span>
+                          <span class="grid-line"></span><span class="grid-line"></span>
+                          <span class="grid-line"></span><span class="grid-line"></span>
+                        </div>
+                        <div class="event-block event-a" id="block-a" style="left: 10%; width: 40%;">Coding Contest
+                        </div>
+                        <div class="event-block event-b" id="block-b" style="left: 45%; width: 45%;">Hackathon</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="conflict-sliders">
+                    <div class="input-group">
+                      <label>Coding Contest (Time)</label>
+                      <div class="range-wrap">
+                        <input type="range" id="slider-a-start" min="8" max="16" value="9">
+                        <span class="range-val" id="val-a-time">09:00 - 13:00</span>
+                      </div>
+                    </div>
+                    <div class="input-group">
+                      <label>Hackathon (Time)</label>
+                      <div class="range-wrap">
+                        <input type="range" id="slider-b-start" min="10" max="18" value="13">
+                        <span class="range-val" id="val-b-time">13:00 - 17:30</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="conflict-status-banner no-conflict" id="conflict-status">
+                    <i class="fa-solid fa-circle-check"></i> JPQL: No double-bookings detected. Transaction safe.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Skills Matrix Section -->
+  <section id="skills" class="section scroll-reveal" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Skills & Tech Stack Matrix</h2>
+        <p>Filter my skills by domain. Click on a skill to highlight experience and projects that leveraged that
+          specific tech stack.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="skills-filter">
+        <button class="skills-filter-btn active" data-filter="all">All Stack</button>
+        <button class="skills-filter-btn" data-filter="languages">Languages</button>
+        <button class="skills-filter-btn" data-filter="frameworks">Technologies</button>
+        <button class="skills-filter-btn" data-filter="tools">Tools & Fundamentals</button>
+      </div>
+
+      <!-- Skills Nodes Grid -->
+      <div class="skills-grid" id="skills-grid-container">
+        <!-- Languages -->
+        <div class="skill-node" data-category="languages" data-skill="java">
+          <i class="fa-brands fa-java" style="color: #f89820;"></i>
+          <span>Java</span>
+        </div>
+        <div class="skill-node" data-category="languages" data-skill="python">
+          <i class="fa-brands fa-python" style="color: #3776ab;"></i>
+          <span>Python</span>
+        </div>
+        <div class="skill-node" data-category="languages" data-skill="js">
+          <i class="fa-brands fa-js" style="color: #f7df1e;"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-node" data-category="languages" data-skill="c">
+          <i class="fa-solid fa-code" style="color: #a8b9cc;"></i>
+          <span>C Language</span>
+        </div>
+
+        <!-- Technologies -->
+        <div class="skill-node" data-category="frameworks" data-skill="springboot">
+          <i class="fa-solid fa-leaf" style="color: #6db33f;"></i>
+          <span>Spring Boot</span>
+        </div>
+        <div class="skill-node" data-category="frameworks" data-skill="hibernate">
+          <i class="fa-solid fa-database" style="color: #b58957;"></i>
+          <span>Hibernate / JPA</span>
+        </div>
+        <div class="skill-node" data-category="frameworks" data-skill="flask">
+          <i class="fa-solid fa-pepper-hot" style="color: #ffffff;"></i>
+          <span>Flask</span>
+        </div>
+        <div class="skill-node" data-category="frameworks" data-skill="react">
+          <i class="fa-brands fa-react" style="color: #61dafb;"></i>
+          <span>React</span>
+        </div>
+        <div class="skill-node" data-category="frameworks" data-skill="mysql">
+          <i class="fa-solid fa-server" style="color: #00758f;"></i>
+          <span>MySQL</span>
+        </div>
+        <div class="skill-node" data-category="frameworks" data-skill="scikit">
+          <i class="fa-solid fa-chart-line" style="color: #f8981d;"></i>
+          <span>Scikit-Learn</span>
+        </div>
+
+        <!-- Tools & Fundamentals -->
+        <div class="skill-node" data-category="tools" data-skill="git">
+          <i class="fa-brands fa-git-alt" style="color: #f05032;"></i>
+          <span>Git / GitHub</span>
+        </div>
+        <div class="skill-node" data-category="tools" data-skill="dsa">
+          <i class="fa-solid fa-gears" style="color: #ec4899;"></i>
+          <span>Data Structures</span>
+        </div>
+        <div class="skill-node" data-category="tools" data-skill="oop">
+          <i class="fa-solid fa-cubes" style="color: #3b82f6;"></i>
+          <span>OOP Principles</span>
+        </div>
+        <div class="skill-node" data-category="tools" data-skill="dbms">
+          <i class="fa-solid fa-database" style="color: #10b981;"></i>
+          <span>DBMS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Education Section -->
+  <section id="experience" class="section scroll-reveal">
+    <div class="container">
+      <div class="section-header">
+        <h2>Experience & Education</h2>
+        <p>A history of internships, academic metrics, and deep dives into engineering fields.</p>
+      </div>
+
+      <div class="timeline-container">
+
+        <!-- Experience 1 -->
+        <div class="timeline-item exp" data-skills="java,springboot,hibernate,mysql,dsa,oop">
+          <div class="timeline-badge"><i class="fa-solid fa-briefcase"></i></div>
+          <span class="timeline-time">Dec 2025 - Apr 2026</span>
+          <div class="glass-card timeline-card">
+            <h3>Java Full Stack Intern</h3>
+            <h4>TAP Academy, Bengaluru</h4>
+            <ul>
+              <li>Built an AI-powered mock interview evaluation platform, rendering dynamic question lists for software
+                engineering aspirants.</li>
+              <li>Configured context state processing to handle concurrent sessions without leakage, using a robust
+                JWT-based stateless architecture.</li>
+              <li>Optimized DB-first evaluation caching structures, reducing API service calls by up to 60%.</li>
             </ul>
-            <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="timeline-techs">
+              <span>Java</span><span>Spring Boot</span><span>Hibernate</span><span>MySQL</span><span>DSA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="timeline-item exp" data-skills="python,flask,scikit,oop">
+          <div class="timeline-badge"><i class="fa-solid fa-briefcase"></i></div>
+          <span class="timeline-time">May 2025 - June 2025</span>
+          <div class="glass-card timeline-card">
+            <h3>Research Intern</h3>
+            <h4>IIT Hyderabad</h4>
+            <ul>
+              <li>Constructed a predictive valuation web dashboard using Flask and scikit-learn Multiple Linear
+                Regression models.</li>
+              <li>Engineered dynamic data parsing modules featuring polynomial transforms and one-hot encoders to
+                improve fit.</li>
+              <li>Designed robust pipelines to check structural durability of ML models under varied data distributions.
+              </li>
+            </ul>
+            <div class="timeline-techs">
+              <span>Python</span><span>Flask</span><span>Scikit-Learn</span><span>Regression Analysis</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education 1 -->
+        <div class="timeline-item edu" data-skills="java,python,c,dsa,oop,dbms">
+          <div class="timeline-badge"><i class="fa-solid fa-graduation-cap"></i></div>
+          <span class="timeline-time">2022 - 2026</span>
+          <div class="glass-card timeline-card">
+            <h3>B.Tech in Computer Science and Engineering</h3>
+            <h4>G.Pulla Reddy Engineering College (Autonomous), Kurnool</h4>
+            <ul>
+              <li>Graduating with a cumulative GPA of <strong>8.73 / 10.00</strong>.</li>
+              <li>Curriculum focuses: Data Structures & Algorithms, Object Oriented Programming, DBMS, Operating
+                Systems, Computer Networks.</li>
+            </ul>
+            <div class="timeline-techs">
+              <span>JNTUA Board</span><span>CGPA: 8.73</span><span>CS&E Major</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education 2 -->
+        <div class="timeline-item edu">
+          <div class="timeline-badge"><i class="fa-solid fa-graduation-cap"></i></div>
+          <span class="timeline-time">2022</span>
+          <div class="glass-card timeline-card">
+            <h3>Intermediate (Class XII)</h3>
+            <h4>Srujana Junior College, Kurnool</h4>
+            <ul>
+              <li>Completed Board of Intermediate Education, AP (BIEAP) with a score of <strong>83.0%</strong>.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section scroll-reveal" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Engineering Works</h2>
+        <p>Explore some of the primary projects I built during my academic and professional career.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="glass-card project-card" data-skills="java,springboot,react,mysql,oop">
+          <h3>AI-Interview Platform</h3>
+          <p>
+            An end-to-end evaluation tool producing adaptive, track-specific technical interview questions and
+            generating performance scorecard context within 2 seconds. Implements JWT validation controls and DB-first
+            query reduction caching.
+          </p>
+          <div class="pane-tech" style="margin-bottom: 20px;">
+            <span class="tech-tag">Java Spring</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Gemini API</span>
+            <span class="tech-tag">MySQL</span>
+          </div>
+          <div class="project-meta">
+            <div class="project-links">
+              <a href="#showroom" class="project-link showroom-shortcut" data-target-tab="interview">
+                <i class="fa-solid fa-play"></i> Run Demo
+              </a>
+            </div>
+            <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 500;">Dec 2025</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="glass-card project-card" data-skills="java,springboot,hibernate,react,mysql,oop">
+          <h3>Stateless Event Manager</h3>
+          <p>
+            A high-integrity resource scheduler mapping campus venues. Prevents double-bookings across concurrent
+            transactions using JPA/JPQL isolation, managed via a stateless Spring Boot REST interface and React
+            dashboard.
+          </p>
+          <div class="pane-tech" style="margin-bottom: 20px;">
+            <span class="tech-tag">Spring Boot</span>
+            <span class="tech-tag">Hibernate</span>
+            <span class="tech-tag">React JS</span>
+            <span class="tech-tag">RBAC Security</span>
+          </div>
+          <div class="project-meta">
+            <div class="project-links">
+              <a href="#showroom" class="project-link showroom-shortcut" data-target-tab="conflict">
+                <i class="fa-solid fa-play"></i> Run Demo
+              </a>
+            </div>
+            <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 500;">Mar 2026</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="glass-card project-card" data-skills="python,flask,scikit,oop">
+          <h3>Car Price ML Regressor</h3>
+          <p>
+            An analytics engine applying polynomial expansion regression pipelines to multi-country automotive listings.
+            Exposes modular HTTP endpoints to process variable parameters and provide instant valuation gauges.
+          </p>
+          <div class="pane-tech" style="margin-bottom: 20px;">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">Scikit-Learn</span>
+            <span class="tech-tag">Regression</span>
+          </div>
+          <div class="project-meta">
+            <div class="project-links">
+              <a href="#showroom" class="project-link showroom-shortcut" data-target-tab="predictor">
+                <i class="fa-solid fa-play"></i> Run Demo
+              </a>
+            </div>
+            <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 500;">Jun 2025</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section class="section scroll-reveal">
+    <div class="container">
+      <div class="section-header">
+        <h2>Key Milestones & Achievements</h2>
+        <p>Competitive programming track records, collaborative projects, and campus leadership roles.</p>
+      </div>
+
+      <div class="carousel-container">
+        <div class="carousel-track" id="carousel-track">
+
+          <!-- Slide 1 -->
+          <div class="glass-card carousel-slide achievement-slide">
+            <div class="achievement-icon">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <h3>Shaastra Contest Finalist</h3>
+            <p>Qualified for the national finals of the Shaastra Programming Contest conducted by **IIT Madras**—placing
+              among the top competitive programming minds in the country.</p>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="glass-card carousel-slide achievement-slide">
+            <div class="achievement-icon">
+              <i class="fa-solid fa-vr-cardboard"></i>
+            </div>
+            <h3>AR/VR Cyber Research</h3>
+            <p>Collaborated directly with research members from the **University of North Texas** on a joint AR/VR
+              initiative simulating interactive cyber threat environments.</p>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="glass-card carousel-slide achievement-slide">
+            <div class="achievement-icon">
+              <i class="fa-solid fa-keyboard"></i>
+            </div>
+            <h3>Jignasa Coding Organizer</h3>
+            <p>Organized the popular **Blind Coding Challenge** as a leading competitive programming team member during
+              the Jignasa 2K24 technical fest.</p>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="glass-card carousel-slide achievement-slide">
+            <div class="achievement-icon">
+              <i class="fa-solid fa-user-astronaut"></i>
+            </div>
+            <h3>Space Week Volunteer</h3>
+            <p>Served as an operations volunteer in the **World Space Week** exhibition organized jointly by **Satish
+              Dhawan Space Centre SHAR** (ISRO) and GPREC.</p>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="glass-card carousel-slide achievement-slide">
+            <div class="achievement-icon">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <h3>Generative AI Paper</h3>
+            <p>Delivered an academic presentation on **"Generative AI and its Applications"**, highlighting transformer
+              structures and industrial adaptation vectors.</p>
+          </div>
+
+        </div>
+
+        <!-- Carousel Controls -->
+        <div class="carousel-controls">
+          <button class="carousel-arrow" id="prev-slide" aria-label="Previous Slide">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="carousel-dots" id="carousel-dots">
+            <!-- Dots filled dynamically -->
+          </div>
+          <button class="carousel-arrow" id="next-slide" aria-label="Next Slide">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section scroll-reveal" style="background: var(--bg-secondary); overflow: hidden;">
+    <div class="container">
+      <div class="section-header">
+        <h2>Establish Contact</h2>
+        <p>Recruiters, hiring managers, or collaborators: drop a message below or reach out via direct channels.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+
+          <!-- Contact Phone -->
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <label>Call Direct</label>
+              <p>+91 9912224217</p>
+            </div>
+          </div>
+
+          <!-- Contact Email -->
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <label>Mail Channels</label>
+              <p><a href="mailto:advaithsai.n112@gmail.com">advaithsai.n112@gmail.com</a></p>
+            </div>
+          </div>
+
+          <!-- Contact Coding Profiles -->
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-code-branch"></i>
+            </div>
+            <div class="contact-details">
+              <label>Competitive Coding Profiles</label>
+              <div class="social-links" style="margin-top: 5px;">
+                <a href="https://leetcode.com/u/advaithsain112/" target="_blank" class="social-btn" title="LeetCode">
+                  <i class="fa-solid fa-code"></i>
+                </a>
+                <a href="https://codeforces.com/profile/NSaiAdvaith" target="_blank" class="social-btn"
+                  title="Codeforces">
+                  <i class="fa-solid fa-square-poll-vertical"></i>
+                </a>
+                <a href="https://www.hackerrank.com/profile/advaithsai_n112" target="_blank" class="social-btn"
+                  title="HackerRank">
+                  <i class="fa-brands fa-hackerrank"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Social Media -->
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-share-nodes"></i>
+            </div>
+            <div class="contact-details">
+              <label>Connect Socially</label>
+              <div class="social-links" style="margin-top: 5px;">
+                <a href="https://www.linkedin.com/in/advaith-sai-n-165756251/" target="_blank" class="social-btn"
+                  title="LinkedIn">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/advaithsain112" target="_blank" class="social-btn" title="GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="glass-card" style="position: relative;">
+          <!-- Success State Display -->
+          <div class="form-success-overlay" id="form-success">
+            <div class="success-icon">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3>Message Dispatched!</h3>
+            <p id="success-msg-details">Thank you for reaching out. I'll get back to you shortly at the provided email.
+            </p>
+            <button class="btn btn-secondary" id="reset-form-btn" style="padding: 10px 20px;">Send Another
+              Message</button>
+          </div>
+
+          <!-- Direct Form -->
+          <form class="contact-form" id="portfolio-contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="frm-name">Your Name</label>
+                <input type="text" id="frm-name" class="form-input" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="frm-email">Your Email</label>
+                <input type="email" id="frm-email" class="form-input" placeholder="john@company.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="frm-subject">Subject</label>
+              <input type="text" id="frm-subject" class="form-input" placeholder="Opportunities / Project Collaboration"
+                required>
+            </div>
+            <div class="form-group">
+              <label for="frm-message">Message</label>
+              <textarea id="frm-message" class="form-input"
+                placeholder="Hi Advaith, I saw your showroom simulators and..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary submit-btn">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
             </button>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
+          </form>
         </div>
-        <div class="container hero-content">
-            <h1 class="hero-title">
-                Hi, I'm <span class="gradient-text">N Sai Advaith</span>
-            </h1>
-            <p class="hero-subtitle">
-                <span id="typed-text"></span><span class="cursor">|</span>
-            </p>
-            <p class="hero-description">
-                Computer Science Undergraduate | Machine Learning Enthusiast | Web Developer
-            </p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <span></span>
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="about section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <div class="image-wrapper">
-                        <div class="image-placeholder">
-                            <!-- Simple Avatar Placeholder SVG -->
-                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="100" cy="70" r="30" fill="rgba(139, 92, 246, 0.3)" />
-                                <path d="M60,120 Q100,100 140,120 L140,180 Q100,160 60,180 Z"
-                                    fill="rgba(139, 92, 246, 0.3)" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-text">
-                    <h3>Final Year CSE Undergraduate</h3>
-                    <p>
-                        I am a Computer Science and Engineering student at <strong>G. Pulla Reddy Engineering College
-                            (GPREC)</strong> with a CGPA of <strong>8.63/10</strong>.
-                        My passion lies in solving complex problems using Machine Learning and building efficient web
-                        applications.
-                    </p>
-                    <p>
-                        I recently completed a <strong>Research Internship at IIT Hyderabad</strong>, where I worked on
-                        predictive modeling and web integration.
-                        I am also an active competitive programmer and a member of the Codechef GPREC Chapter.
-                    </p>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Nagulapally Sai Advaith. Built from scratch with Vanilla HTML, CSS, and JS.</p>
+      <p style="font-size: 0.8rem; color: var(--text-muted);">Highly interactive & recruiters-optimized experience</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#showroom">Showroom</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+      </div>
+    </div>
+  </footer>
 
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">8.63</span>
-                            <span class="stat-label">CGPA</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">IIT</span>
-                            <span class="stat-label">Research Intern</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">2</span>
-                            <span class="stat-label">Major Projects</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Education & Experience Timeline Style -->
-            <div style="margin-top: 4rem;">
-                <h3 style="text-align: center; margin-bottom: 2rem; color: var(--text-primary);">Education & Experience
-                </h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                    <div
-                        style="background: var(--bg-glass); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,0.1);">
-                        <h4 style="color: var(--color-primary-light);">Research Intern</h4>
-                        <p style="font-size: 0.9rem; color: var(--text-muted);">IIT Hyderabad | May 2025 - June 2025</p>
-                        <ul
-                            style="margin-top: 1rem; padding-left: 1.2rem; color: var(--text-secondary); font-size: 0.95rem;">
-                            <li>Developed car price prediction model using Multiple Linear Regression.</li>
-                            <li>Integrated model into a Flask web app.</li>
-                            <li>Worked with synthetic AI-generated data for model testing.</li>
-                        </ul>
-                    </div>
-                    <div
-                        style="background: var(--bg-glass); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,0.1);">
-                        <h4 style="color: var(--color-primary-light);">B.Tech in CSE</h4>
-                        <p style="font-size: 0.9rem; color: var(--text-muted);">G. Pulla Reddy Engineering College |
-                            2022 - Present</p>
-                        <p style="margin-top: 0.5rem; color: var(--text-secondary);">CGPA: 8.63/10</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <p class="section-description">Languages, Frameworks & Tools</p>
-            <div class="skills-grid">
-                <!-- Python -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <h3>Languages</h3>
-                    <p>Python, Java, C, JavaScript</p>
-                    <div class="skill-progress">
-                        <div class="skill-bar" data-progress="90"></div>
-                    </div>
-                </div>
-                <!-- Web Dev -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2" />
-                            <path d="M9 9L15 15M15 9L9 15" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" />
-                        </svg>
-                    </div>
-                    <h3>Web Development</h3>
-                    <p>HTML, CSS, Node.js, Express.js</p>
-                    <div class="skill-progress">
-                        <div class="skill-bar" data-progress="85"></div>
-                    </div>
-                </div>
-                <!-- ML -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M21 16V8C21 6.89543 20.1046 6 19 6H5C3.89543 6 3 6.89543 3 8V16C3 17.1046 3.89543 18 5 18H19C20.1046 18 21 17.1046 21 16Z"
-                                stroke="currentColor" stroke-width="2" />
-                            <path d="M3 10H21" stroke="currentColor" stroke-width="2" />
-                        </svg>
-                    </div>
-                    <h3>Machine Learning</h3>
-                    <p>Scikit-learn, Pandas, NumPy, XGBoost</p>
-                    <div class="skill-progress">
-                        <div class="skill-bar" data-progress="80"></div>
-                    </div>
-                </div>
-                <!-- Frameworks -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 8L3 12L7 16M17 8L21 12L17 16M14 4L10 20" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <h3>Frameworks</h3>
-                    <p>Flask, Bootstrap</p>
-                    <div class="skill-progress">
-                        <div class="skill-bar" data-progress="75"></div>
-                    </div>
-                </div>
-                <!-- Tools -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" />
-                            <path d="M12 3C8 3 6 7 6 12C6 17 8 21 12 21" stroke="currentColor" stroke-width="2" />
-                            <path d="M12 3C16 3 18 7 18 12C18 17 16 21 12 21" stroke="currentColor" stroke-width="2" />
-                            <path d="M3 12H21" stroke="currentColor" stroke-width="2" />
-                        </svg>
-                    </div>
-                    <h3>Tools</h3>
-                    <p>Git, VS Code, Postman</p>
-                    <div class="skill-progress">
-                        <div class="skill-bar" data-progress="85"></div>
-                    </div>
-                </div>
-                <!-- Databases -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 3C16.97 3 21 4.79 21 7C21 9.21 16.97 11 12 11C7.03 11 3 9.21 3 7C3 4.79 7.03 3 12 3Z"
-                                stroke="currentColor" stroke-width="2" />
-                            <path d="M21 7V17C21 19.21 16.97 21 12 21C7.03 21 3 19.21 3 17V7" stroke="currentColor"
-                                stroke-width="2" />
-                            <path d="M3 12C3 14.21 7.03 16 12 16C16.97 16 21 14.21 21 12" stroke="currentColor"
-                                stroke-width="2" />
-                        </svg>
-                    </div>
-                    <h3>Databases</h3>
-                    <p>MongoDB</p>
-                    <div class="skill-progress">
-                        <div class="skill-bar" data-progress="70"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects section">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-description">My recent work in ML and Development</p>
-            <div class="projects-grid">
-                <!-- Regression Engine -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link">View Project</a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Regression Engine</h3>
-                        <p>Machine learning web app to predict outcomes using regression techniques. Built during IITH
-                            internship.</p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">ML</span>
-                            <span class="tag">Flask</span>
-                        </div>
-                    </div>
-                </article>
-                <!-- Spot Hedging Bot -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link">View Project</a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Spot Hedging Bot</h3>
-                        <p>Automated risk management system for crypto spot positions using derivatives, with a Telegram
-                            bot interface.</p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Telegram API</span>
-                            <span class="tag">Automation</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-description">Feel free to reach out for collaborations or opportunities</p>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M3 8L10.89 13.26C11.5 13.67 12.5 13.67 13.11 13.26L21 8M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h3>Email</h3>
-                            <p>advaithsai.n112@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h3>Phone</h3>
-                            <p>+91 9912224217</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h3>Location</h3>
-                            <p>Kurnool, India</p>
-                        </div>
-                    </div>
-                </div>
-                <form id="contact-form" class="contact-form">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
-                        <span class="form-error" id="name-error"></span>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" class="form-input" placeholder="Your Email"
-                            required>
-                        <span class="form-error" id="email-error"></span>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" name="subject" class="form-input" placeholder="Subject"
-                            required>
-                        <span class="form-error" id="subject-error"></span>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" class="form-input" rows="5" placeholder="Your Message"
-                            required></textarea>
-                        <span class="form-error" id="message-error"></span>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
-                    <div id="form-status" class="form-status"></div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3 class="footer-logo">NSA</h3>
-                    <p>Building the web & ML models, one project at a time.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Connect</h4>
-                    <div class="social-links">
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
-                            </svg>
-                        </a>
-                        <a href="https://linkedin.com/in/advaith-sai-n" target="_blank" rel="noopener noreferrer"
-                            aria-label="LinkedIn">
-                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 N Sai Advaith. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <!-- Core Javascript -->
+  <script src="app.js"></script>
 </body>
 
-
 </html>
-
-
